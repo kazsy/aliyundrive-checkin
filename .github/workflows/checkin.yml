@@ -1,7 +1,7 @@
 name: aliyundrive-checkin
 on:
   schedule:
-  - cron: 0 16 * * *
+  - cron: '0 0 * * *'  # 北京时间上午8:00，分钟字段设置为0，小时字段设置为8
   workflow_dispatch:
 jobs:
   build:
